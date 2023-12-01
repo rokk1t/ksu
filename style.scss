@@ -1,0 +1,48 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Заголовки
+.btn-blue-purple {
+  // background-color: $blue-200; // Buttom background color
+  color: #055193; // Buttom text color
+  background-image: linear-gradient(to right, #ffffff, #d5eefc);
+  &:hover {
+    // background-color: $purple-200; // Buttom background color on hover
+    background-image: linear-gradient(to right, #ffffff, lighten(#4e008e,60%)); // Gradient on hover
+    color: #4e008e; // Buttom text color on hover
+  }
+}
+
+// accordion підbtn
+// Розгорнута accordion підbtn
+.accordion-button:not(.collapsed) {
+  background-color: $purple-100;
+  color: white;
+  color: $purple-700;
+}
+// Згорнута accordion підbtn
+.accordion-button.collapsed {
+  background-color: $blue-200;
+  color: $blue-600;;
+}
+
+// Підкнопки меню
+.nav-item .nav-link {
+  &:hover {
+    background-color: $purple-100;
+    color: $purple-700;
+  }
+}
+
+.btn-hover-effect {
+  color: $blue-600;
+  &:hover {
+    background-color: $purple-200;
+    color: $purple-700;
+  }
+}
+
+// Римські цифри
+.roman-numbers {
+list-style-type: upper-roman;
+}
+
